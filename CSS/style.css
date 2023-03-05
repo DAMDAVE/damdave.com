@@ -9,15 +9,18 @@
 .menu{
     width: 80%;
 }
+.gif{
+    margin-top: 70vh;
+}
 footer{
-    margin-top: 100vh;
+    margin-top: 80vh;
     margin-bottom: 0px;
     font-size: 30px;
-    height: 100px;
+    height: 20vh;
     clear: both;
 }
 footer>span>a, footer>a{
-color: black;6
+color: black;
 }
 footer>span{
     margin-left: 2%;

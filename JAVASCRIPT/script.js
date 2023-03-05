@@ -5,9 +5,17 @@ $(function () { // Same as document.addEventListener("DOMContentLoaded"...
       $("#offcanvasBody").collapse('hide');
   });
 });
+
+var insertHtml = function (selector, html) {
+  var targetElem = document.querySelector(selector);
+  targetElem.innerHTML = html;
+};
+
 var showLoading = function (selector) {
-    var html = "<div class='text-center'>";
+    var html = "<div class='text-center gif'>";
     html += "<img src='IMAGES/1485.gif'></div>";
     insertHtml(selector, html);
   };
-  showLoading("#main-content");
+document.addEventListener("DOMContentLoaded", function (event) {
+  showLoading("#main-content")
+});
