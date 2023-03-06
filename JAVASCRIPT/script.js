@@ -33,7 +33,3 @@ document.addEventListener("DOMContentLoaded", function (event) {
       x.style.display = "block";
     }
   }
-
-  var menu = document.getElementById("topnav")
- 
-  menu.addEventListener ("blur", menu.remove())
