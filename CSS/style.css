@@ -3,12 +3,12 @@
   }
  
   .topnav {
-    margin-left: 80%;
-    width: 20%;
+    margin-left: 77vw;
+    width: 20vw;
     margin-top: 0px;
     overflow: hidden;
     position: absolute;
-    border-radius: 10px;
+    border-radius: 0px 0px 20px 20px;
   }
   
   .topnav #myLinks {
