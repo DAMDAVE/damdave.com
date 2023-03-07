@@ -9,11 +9,19 @@ var showLoading = function (selector) {
     insertHtml(selector, html);
   };
 
-  // var homeHtmlUrl ="HTML/home.html"
+  var homehtml ="HTML/home.html"
+  
 document.addEventListener("DOMContentLoaded", function (event) {
-  showLoading("#main-content")
-  });
-
+    showLoading("#main-content");
+    $ajaxUtils.sendGetRequest(
+      homehtml, 
+      function (responseText){
+      document.querySelector("#main-content").innerHTML = responseText
+      },
+      false
+    )
+   });
+  
    function myFunction(x) {
     x.classList.toggle("change");
     var x = document.getElementById("myLinks");
@@ -23,7 +31,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
       x.style.display = "block";
     }
   }
-  
 
   function myFunc() {
     var x = document.getElementById("myLinks");

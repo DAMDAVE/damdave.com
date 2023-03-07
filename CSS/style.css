@@ -2,20 +2,33 @@
     box-sizing: border-box;
   }
  
+  .siteName{
+    font-size: 30px;
+    font-family: 'Tilt Prism', cursive;
+  }
+
   .topnav {
+    z-index: 900;
     font-size: 2em;
-    font-family: cursive;
+    font-family: Cambria;
     margin-left: 10%;
     width:80%;
     margin-top: 0px;
     overflow: hidden;
     position: absolute;
     border-radius: 0px 0px 20px 20px;
+    animation: down 2s;
   }
   
   .topnav #myLinks {
-    height: 110vh;
+    height: 77vh;
     display: none;
+    animation: moveDown 0.4s ;
+   
+  }
+  hr{
+    margin-left: 10%;
+    width: 80%;
   }
   
   .topnav a {
@@ -24,14 +37,6 @@
     text-decoration: none;
     font-size: 17px;
     display: block;
-  }
-  
-  .topnav a.icon {
-    background: black;
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
   }
   
   .topnav a:hover {
@@ -45,6 +50,7 @@
   }
 
   .contain {
+    padding-left: 30px;
     display: inline-block;
     cursor: pointer;
   }
@@ -53,22 +59,28 @@
     width: 30px;
     height: 1px;
     background-color: #333;
-    margin: 12px 0;
-    transition: 1s;
+    margin: 10px;
+    transition: 0.4s;
   }
   
   .change .bar1 {
-    transform: translate(0, 15px) rotate(-225deg);
+    transform: translate(0, 11px) rotate(45deg);
   }
   
   .change .bar2 {opacity: 0;}
   
   .change .bar3 {
-    transform: translate(0, -11px) rotate(225deg);
+    transform: translate(0, -11px) rotate(-45deg);
   }
 
   #main-content{
-    margin-top: 50px;
+    position: absolute;
+  }
+
+  .gif{
+     position: relative;
+     top: 20vh;
+     left: 10%;
   }
 
 .foot{
@@ -79,6 +91,7 @@
 }
 
 footer{
+    z-index: 901;
     margin-top: 80vh;
     font-size: 30px;
     height: 20vh;
@@ -97,4 +110,12 @@ footer>div>span{
 
 footer>div>p{
     font-size: 20px;
+}
+@keyframes moveDown {
+  0% {margin-top: -110vh;}
+  100% {margin-top: 0px;}
+}
+@keyframes down {
+  0% {width: 2%;}
+  100% {width: 80%;}
 }
