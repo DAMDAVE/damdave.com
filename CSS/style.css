@@ -3,9 +3,10 @@
   }
  
   .siteName{
-    font-size: 2em;
+    font-size: 20px;
     font-family: 'Tilt Prism', cursive;
   }
+
 
   .topnav {
     z-index: 900;
