@@ -7,7 +7,11 @@
     font-family: 'Tilt Prism', cursive;
   }
 
-
+   body{
+    background-image: url(../IMAGES/image3.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+   }
   .topnav {
     z-index: 900;
     font-size: 2em;
