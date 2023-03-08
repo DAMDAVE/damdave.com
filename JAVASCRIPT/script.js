@@ -5,7 +5,7 @@ var insertHtml = function (selector, html) {
 
 var showLoading = function (selector) {
     var html = "<div class='text-center gif'>";
-    html += "<img src='IMAGES/1485.gif'></div>";
+    html += "<img src='IMAGES/123.gif'></div>";
     insertHtml(selector, html);
   };
 
