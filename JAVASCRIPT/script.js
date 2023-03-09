@@ -10,9 +10,9 @@ var showLoading = function (selector) {
   };
 
   var homehtml ="HTML/home.html"
-  showLoading("#main-content");
+ 
 document.addEventListener("DOMContentLoaded", function (event) {
-    
+  showLoading("#main-content");
     $ajaxUtils.sendGetRequest(
       homehtml, 
       function (responseText){

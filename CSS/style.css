@@ -1,6 +1,13 @@
   *{
     box-sizing: border-box;
   }
+
+  body{
+    background-image: url(../IMAGES/100.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+   }
+
   .navbar{
     background-color: rgb(146, 207, 231);
   }
@@ -11,11 +18,6 @@
     font-family: 'Rampart One', Cursive;
   }
 
-   body{
-    background-image: url(../IMAGES/100.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-   }
   .topnav {
     z-index: 900;
     font-size: 2em;
@@ -26,7 +28,6 @@
     overflow: hidden;
     position: absolute;
     border-radius: 0px 0px 20px 20px;
-    animation: down 2s;
   }
   
   .topnav #myLinks {
@@ -36,6 +37,7 @@
     animation: moveDown 0.4s ;
    
   }
+
   hr{
     border: solid white 3px;
     color: wheat;
@@ -44,7 +46,6 @@
   }
   
   .topnav a {
-    
     color: white;
     padding: 14px 16px;
     text-decoration: none;
@@ -57,20 +58,33 @@
     color: black;
   }
   
-  .active {
-    background-color: #04AA6D;
-    color: white;
-  }
-  
   .homeHtml{
-    margin-top: 20px;
+    margin-top: 10px;
+    margin-left: 10%;
+    width: 80%;
+  }
+
+  .profile{
+    margin: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(../IMAGES/Profile.jpg);
+    width: 150px;
+    height: 200px;
+    border-radius: 50px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
   }
   
-  div>p{
+  div>p {
     font-family: 'Inconsolata', monospace;
     font-size: 20px;
-    color: brown;
+    color: rgb(225, 175, 175);
   }
+  p.text-center {
+    margin: 0px 0px 0px 0px !important;
+  }
+
   .contain {
     padding-left: 30px;
     display: inline-block;
@@ -96,13 +110,24 @@
   }
 
   #main-content{
-    position: absolute;
+
   }
 
+   ul{
+    font-size: 30px;
+    font-family: 'Rampart One';
+    color: rgb(225, 175, 175);
+   }
+
+   li{
+    padding: 10px;
+    list-style-type: none;
+   }
   .gif{
      position: relative;
      top: 20vh;
-     left: 10%;
+     margin-left: auto;
+     margin-right: auto;
   }
 
 
@@ -110,7 +135,6 @@ footer{
     background-color: rgb(82, 82, 154);
     color: white;
     z-index: 901;
-    margin-top: 80vh;
     font-size: 30px;
     height: 20vh;
 }
@@ -133,11 +157,9 @@ footer>div>span{
 footer>p{
   color: inherit;
 }
+
 @keyframes moveDown {
   0% {margin-top: -110vh;}
   100% {margin-top: 0px;}
 }
-@keyframes down {
-  0% {width: 2%;}
-  100% {width: 80%;}
-}
+
