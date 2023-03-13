@@ -16,6 +16,7 @@
     background-color: rgb(0, 0, 0);
   }
    .copy{
+     color: black;
      font-family: 'Nunito';
      font-size: 15px;
    }
@@ -138,6 +139,7 @@
   }
 
   .div2>p>a{
+   font-size: 0.7em;
    font-family: 'Nunito';
    color: rgb(0, 213, 255);
    text-decoration: underline;
