@@ -189,10 +189,9 @@ footer{
     color: white;
     z-index: 901;
     font-size: 20px;
-    height: 15vh;
 }
 footer>div{
-    padding-top: 15px;
+    padding-bottom: 5px;
 }
 
 footer>div>span>a, footer>div>a{
@@ -208,6 +207,7 @@ footer>div>span{
 }
 
 footer>p{
+  font-size: 10px;
   color: inherit;
 }
 
