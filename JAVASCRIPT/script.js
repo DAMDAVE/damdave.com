@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
   window.onscroll = function() {scrollFunction()};
   
   function scrollFunction() {
-    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
       mybutton.style.display = "block";
     } else {
       mybutton.style.display = "none";
