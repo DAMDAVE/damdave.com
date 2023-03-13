@@ -183,11 +183,6 @@
     cursor: pointer;
     border-radius: 30px;
   }
-  
-  #myBtn:hover {
-    background-color: #555;
-  }
-
 
 footer{
     background-color: rgb(82, 82, 154);
