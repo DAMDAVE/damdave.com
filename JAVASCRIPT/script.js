@@ -10,8 +10,11 @@ var showLoading = function (selector) {
   };
 
   var homehtml ="HTML/home.html"
- 
-document.addEventListener("DOMContentLoaded", function (event) {
+  const linkhome = document.querySelector(".home");
+
+  document.addEventListener("DOMContentLoaded", function (event) {
+   linkhome.style.color ="#8e158a";
+   linkhome.style.borderBottom = "solid 2px #8e158a";
   showLoading("#main-content");
     $ajaxUtils.sendGetRequest(
       homehtml, 
@@ -21,6 +24,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
       false
     )
    });
+
+   linkhome.addEventListener("click", showLoading("#main-content"));
+
   
   //  function myFunction(x) {
   //   x.classList.toggle("change");

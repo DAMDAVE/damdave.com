@@ -10,6 +10,7 @@
     background-image: linear-gradient(120deg, white, #e6a3e4);
     background-repeat: no-repeat;
     background-size: 100% 100%;
+   
    }
   .colorman{
     background-color: rgb(0, 0, 0);
@@ -22,13 +23,12 @@
    }
 
   .siteTitle{
-    background-color: rgb(255, 246, 252);
+    background-image: linear-gradient( rgb(229, 66, 212), rgb(251, 225, 249));
     height: 50px;
   }
  
   .siteName{
     line-height: 40px;
-    background-color: rgb(255, 246, 252);
     color: rgb(155, 42, 165);
     font-size: 20px;
     font-family: 'Rampart One', Cursive;
@@ -46,22 +46,20 @@
   } */
   
   div.myLinks {
-    background-color: white;
+    background-color: rgb(251, 225, 249);
     overflow: auto;
     white-space: nowrap;
     margin-top: 50px;
     margin-bottom: 5px;
-    font-family: ;
   }
-  ::-webkit-scrollbar {
-    width: 5px;
-    height: 5px;
+  div::-webkit-scrollbar {
+    height: 3px;
   }
 
-  ::-webkit-scrollbar-track{
-    background: rgb(211, 207, 244);
+  div::-webkit-scrollbar-track{
+    background: rgb(244, 207, 232);
   }
-  ::-webkit-scrollbar-thumb{
+  div::-webkit-scrollbar-thumb{
     border-radius: 5px;
     background: #e6a3e4;
   }
@@ -72,35 +70,42 @@
     margin-left: 10%;
     width: 80%;
   }
-  
+  .home{
+    margin-left: 20px;
+  }
+  .purple{
+    color: #e6a3e4;
+  }
   div.myLinks a{
     display: inline-block;
     text-decoration: none;
-    color: black;
+    color: rgb(238, 0, 255);
     text-align: center;
     font-family: 'Poppins';
     padding: 6px 15px 15px 15px ;
     margin-top: 10px;
     margin-bottom: 10px;
     line-height: 7px;
-    border-bottom: solid 2px white;
+    border-bottom: solid 2px rgb(251, 225, 249);
     border-radius: 5px 5px 0px 0px;
   }
 
-  div.myLinks a:hover {
-    background-color: whitesmoke;
-    color: #e6a3e4;
-    border-bottom: solid 2px #e6a3e4;
-  }
+   div.myLinks a:hover {
+    color: #8e158e;
+    border-bottom: solid 2px #8e158a;
+  } 
 
-  div.myLinks a:active {
-    border-bottom: solid 2px #e6a3e4;
-  }
+ 
   
   .homeHtml{
     margin-top: 10px;
     margin-left: 10%;
     width: 80%;
+    border-left: solid 2px purple;
+    padding: 10px;
+  }
+  .intro{
+    padding-top: 10px;
   }
   .profilewrapper{
     margin-left: auto;
@@ -119,7 +124,7 @@
     background-image: url(../IMAGES/Profile.jpg);
     width: 150px;
     height: 150px;
-    border: solid brown 4px;
+    border: solid rgb(81, 0, 101) 4px;
     border-radius: 75px;
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -129,6 +134,8 @@
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+    padding: 10px;
+    border-right: solid 2px purple;
   }
   
   div>p {
@@ -171,6 +178,11 @@
    text-decoration: underline;
   }
 
+  .terms{
+    font-family: 'Poppins'!important;
+    font-size: 18px !important;
+    color: red !important;
+  }
    ul{
     font-size: 30px;
     font-family: 'Tilt Prism';
@@ -180,6 +192,7 @@
     font-family: initial;
   }
    li{
+    display: inline-block;
     padding: 10px;
     list-style-type: none;
    }
@@ -202,7 +215,7 @@
     height: 60px;
     width: 60px;
     outline: none;
-    background-color: rgb(239, 5, 192);
+    background-color: rgb(100, 3, 81);
     opacity: 0.8;
     color: rgb(225, 175, 175);
     cursor: pointer;
