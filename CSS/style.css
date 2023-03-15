@@ -29,9 +29,9 @@
  
   .siteName{
     line-height: 40px;
-    color: rgb(155, 42, 165);
+    color: rgb(238, 0, 255);
     font-size: 20px;
-    font-family: 'Rampart One', Cursive;
+    font-family: 'Philosopher', sans-serif;
   }
 
   /* .topnav {
