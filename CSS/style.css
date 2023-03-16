@@ -222,7 +222,7 @@
   #myBtn {
     display: none;
     position: fixed;
-    bottom: 10px;
+    bottom: 25px;
     right: 30px;
     z-index: 99;
     font-size: 20px;
@@ -231,9 +231,9 @@
     height: 60px;
     width: 60px;
     outline: none;
-    background-color: rgb(100, 3, 81);
+    background-color: #e6a3e4;
     opacity: 0.8;
-    color: rgb(225, 175, 175);
+    color: #8e158a;
     cursor: pointer;
     border-radius: 30px;
   }
