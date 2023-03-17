@@ -1,0 +1,21 @@
+.cert1{
+    margin-top: 113px;
+    margin-left: 10%;
+    width: 80%;
+    border-left: solid 2px #e6a3e4;
+    padding-bottom: 0px;
+}
+.certexp{
+  padding: 20px;
+}
+
+.cert1 img {
+    margin-left: 10%;
+    width: 65vw;
+    height: 60vw;
+}
+
+.certexpl{
+    padding: 20px;
+    margin-bottom: 0px !important;
+  }
