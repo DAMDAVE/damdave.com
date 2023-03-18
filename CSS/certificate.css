@@ -2,12 +2,24 @@
     margin-top: 113px;
     margin-left: 10%;
     width: 80%;
-    border-left: solid 2px #e6a3e4;
+    border-left: solid 2px #a9a3e6;
+    border-bottom: solid 2px #a9a3e6;
     padding-bottom: 0px;
 }
+
+.cert2{
+    margin-top: 0px;
+    margin-left: 10%;
+    width: 80%;
+    border-left: solid 2px #a9a3e6;
+    padding-bottom: 0px;
+    height: 200px;
+}
+
 .certexp{
   padding: 20px;
 }
+
 
 .cert1 img {
     margin-left: 10%;
@@ -19,3 +31,49 @@
     padding: 20px;
     margin-bottom: 0px !important;
   }
+
+  .siteName{
+    color: blue;
+  }
+
+  .siteName{
+    color: rgb(19, 19, 133);
+  }
+
+  .siteTitle{
+    background-image:linear-gradient(rgb(225, 230, 251), white);
+    height: 50px;
+  }
+  .purple{
+    font-size: 1.2em;
+    color: #a9a3e6;
+  }
+
+  div.myLinks {
+    background-image: linear-gradient( white, rgb(225, 230, 251));
+  }
+
+  div::-webkit-scrollbar-track{
+    background: rgb(209, 207, 244);
+  }
+
+  div::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+    background: #a9a3e6;
+  }
+
+  div>p {
+    color: #1f158e;
+  }
+
+  #myBtn {
+    background-color: #a9a3e6;
+    color: #1f158e;
+  }
+
+  footer{
+    background-color: rgb(19, 19, 133);
+    color: white;
+    z-index: 901;
+    font-size: 20px;
+}

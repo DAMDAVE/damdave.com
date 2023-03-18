@@ -57,27 +57,27 @@ function loadpageHome () {
       showLoading("#main-content");
       linkHome.style.color ="#8e158a";
       linkHome.style.borderBottom = "solid 2px #8e158a";
-      linkCertificate.style.color ="initial";
+      linkCertificate.style.color ="#e6a3e4";
       linkCertificate.style.borderBottom = "transparent";
-      linkPrevious.style.color ="initial";
+      linkPrevious.style.color ="#e6a3e4";
       linkPrevious.style.borderBottom = "transparent";
-      linkWorks.style.color ="initial";
+      linkWorks.style.color ="#e6a3e4";
       linkWorks.style.borderBottom = "transparent";
-      linkHosting.style.color ="initial";
+      linkHosting.style.color ="#e6a3e4";
       linkHosting.style.borderBottom = "transparent";
-      linkConnect.style.color ="initial";
+      linkConnect.style.color ="#e6a3e4";
       linkConnect.style.borderBottom = "transparent";
-      linkBlog.style.color ="initial";
+      linkBlog.style.color ="#e6a3e4";
       linkBlog.style.borderBottom = "transparent";
-      linkConds.style.color ="initial";
+      linkConds.style.color ="#e6a3e4";
       linkConds.style.borderBottom = "transparent";
-      linkSign.style.color ="initial";
+      linkSign.style.color ="#e6a3e4";
       linkSign.style.borderBottom = "transparent";
-      linkDeveloper.style.color ="initial";
+      linkDeveloper.style.color ="#e6a3e4";
       linkDeveloper.style.borderBottom = "transparent";
-      linkCredits.style.color ="initial";
+      linkCredits.style.color ="#e6a3e4";
       linkCredits.style.borderBottom = "transparent";
-      linkSupport.style.color ="initial";
+      linkSupport.style.color ="#e6a3e4";
       linkSupport.style.borderBottom = "transparent";
       $ajaxUtils.sendGetRequest(
         home,
@@ -85,34 +85,39 @@ function loadpageHome () {
           document.querySelector("#main-content").innerHTML = responseText
         },
        false
-      )
+      );
+      var newLink = document.createElement("link");
+      newLink.rel = "stylesheet";
+      newLink.href = "CSS/style.css";
+      document.getElementsByTagName('head')[0].appendChild(newLink);
+      document.querySelector('meta[name="theme-color"]').setAttribute("content", "rgb(142, 82, 154)")
   };
 
   function loadpageCertificate () {
     showLoading("#main-content");
-    linkCertificate.style.color ="#8e158a";
-    linkCertificate.style.borderBottom = "solid 2px #8e158a";
-    linkHome.style.color ="initial";
+    linkCertificate.style.color ="#1f158e";
+    linkCertificate.style.borderBottom = "solid 2px #1f158e";
+    linkHome.style.color ="#a9a3e6";
     linkHome.style.borderBottom= "transparent";
-    linkPrevious.style.color ="initial";
+    linkPrevious.style.color ="#a9a3e6";
     linkPrevious.style.borderBottom= "transparent";
-    linkWorks.style.color ="initial";
+    linkWorks.style.color ="#a9a3e6";
     linkWorks.style.borderBottom = "transparent";
-    linkHosting.style.color ="initial";
+    linkHosting.style.color ="#a9a3e6";
     linkHosting.style.borderBottom = "transparent";
-    linkConnect.style.color ="initial";
+    linkConnect.style.color ="#a9a3e6";
     linkConnect.style.borderBottom = "transparent";
-    linkBlog.style.color ="initial";
+    linkBlog.style.color ="#a9a3e6";
     linkBlog.style.borderBottom = "transparent";
-    linkConds.style.color ="initial";
+    linkConds.style.color ="#a9a3e6";
     linkConds.style.borderBottom = "transparent";
-    linkSign.style.color ="initial";
+    linkSign.style.color ="#a9a3e6";
     linkSign.style.borderBottom = "transparent";
-    linkDeveloper.style.color ="initial";
+    linkDeveloper.style.color ="#a9a3e6";
     linkDeveloper.style.borderBottom = "transparent";
-    linkCredits.style.color ="initial";
+    linkCredits.style.color ="#a9a3e6";
     linkCredits.style.borderBottom = "transparent";
-    linkSupport.style.color ="initial";
+    linkSupport.style.color ="#a9a3e6";
     linkSupport.style.borderBottom = "transparent";
     $ajaxUtils.sendGetRequest(
       certificate,
@@ -120,8 +125,14 @@ function loadpageHome () {
         document.querySelector("#main-content").innerHTML = responseText
       },
      false
-    )
+    );
+  var newLink = document.createElement("link");
+   newLink.rel = "stylesheet";
+   newLink.href = "CSS/certificate.css";
+   document.getElementsByTagName('head')[0].appendChild(newLink);
+   document.querySelector('meta[name="theme-color"]').setAttribute("content", "rgb(19, 19, 133)")
 };
+ 
 
 function loadpagePrevious () {
   showLoading("#main-content");
