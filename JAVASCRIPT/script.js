@@ -135,31 +135,31 @@ function loadpageHome () {
  
 
 function loadpagePrevious () {
-  showLoading("#main-content");
-  linkPrevious.style.color ="#8e158a";
-  linkPrevious.style.borderBottom = "solid 2px #8e158a";
-  linkHome.style.color ="initial";
+  linkPrevious.style.color ="#158e47";
+  linkPrevious.style.borderBottom = "solid 2px #158e47";
+  linkHome.style.color ="#a3e6b4";
   linkHome.style.borderBottom = "transparent";
-  linkCertificate.style.color ="initial";
+  linkCertificate.style.color ="#a3e6b4";
   linkCertificate.style.borderBottom = "transparent";
-  linkWorks.style.color ="initial";
+  linkWorks.style.color ="#a3e6b4";
   linkWorks.style.borderBottom = "transparent";
-  linkHosting.style.color ="initial";
+  linkHosting.style.color ="#a3e6b4";
   linkHosting.style.borderBottom = "transparent";
-  linkConnect.style.color ="initial";
+  linkConnect.style.color ="#a3e6b4";
   linkConnect.style.borderBottom = "transparent";
-  linkBlog.style.color ="initial";
+  linkBlog.style.color ="#a3e6b4";
   linkBlog.style.borderBottom = "transparent";
-  linkConds.style.color ="initial";
+  linkConds.style.color ="#a3e6b4";
   linkConds.style.borderBottom = "transparent";
-  linkSign.style.color ="initial";
+  linkSign.style.color ="#a3e6b4";
   linkSign.style.borderBottom = "transparent";
-  linkDeveloper.style.color ="initial";
+  linkDeveloper.style.color ="#a3e6b4";
   linkDeveloper.style.borderBottom = "transparent";
-  linkCredits.style.color ="initial";
+  linkCredits.style.color ="#a3e6b4";
   linkCredits.style.borderBottom = "transparent";
-  linkSupport.style.color ="initial";
+  linkSupport.style.color ="#a3e6b4";
   linkSupport.style.borderBottom = "transparent";
+  showLoading("#main-content");
   $ajaxUtils.sendGetRequest(
     previous,
     function (responseText) {
@@ -167,6 +167,11 @@ function loadpagePrevious () {
     },
    false
   )
+  var newLink = document.createElement("link");
+  newLink.rel = "stylesheet";
+  newLink.href = "CSS/previous.css";
+  document.getElementsByTagName('head')[0].appendChild(newLink);
+  document.querySelector('meta[name="theme-color"]').setAttribute("content", "rgb(82, 154, 123)")
 };
 
 function loadpageWorks () {

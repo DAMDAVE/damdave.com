@@ -31,17 +31,6 @@
     font-size: 20px;
     font-family: 'Philosopher', sans-serif;
   }
-
-  /* .topnav {
-    z-index: 900;
-    font-size: 2em;
-    font-family: Cambria;
-    margin-left: 1%;
-    width:98%;
-    margin-top: 0px;
-    overflow: auto;
-    white-space: nowrap;
-  } */
   
   div.myLinks {
     background-image: linear-gradient( white, rgb(251, 225, 249));
@@ -62,13 +51,6 @@
     background: #e6a3e4;
   }
 
-  /* hr{
-    color: #e6a3e4;
-    margin-left: 35%;
-    border: solid 1.8px #e6a3e4;
-    opacity: 1;
-    width: 30%;
-  } */
   .home{
     margin-left: 20px;
   }
@@ -90,6 +72,10 @@
     line-height: 7px;
     border-bottom: solid inherit;
     border-radius: 5px 5px 0px 0px;
+  }
+
+  div.myLinks a:hover{
+    cursor: pointer;
   }
 
   .homeHtml{
@@ -167,11 +153,9 @@
     cursor: pointer;
   }
   
-  .div2>p>a{
-   font-size: 0.7em;
-   font-family: 'Nunito';
-   color: rgb(21, 0, 255);
-   text-decoration: underline;
+  div>p>a{
+   color: rgb(57, 56, 57);
+   text-decoration: none;
   }
 
   .bloop{
@@ -208,7 +192,7 @@
   #myBtn {
     display: none;
     position: fixed;
-    bottom: 25px;
+    bottom: 90px;
     right: 30px;
     z-index: 99;
     font-size: 20px;
