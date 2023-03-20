@@ -154,6 +154,7 @@
   }
   
   div>p>a{
+   font-size: 15px;
    color: rgb(57, 56, 57);
    text-decoration: none;
   }
