@@ -154,6 +154,7 @@
   }
   
   div>p>a{
+   white-space: nowrap;
    font-size: 15px;
    color: rgb(57, 56, 57);
    text-decoration: none;
