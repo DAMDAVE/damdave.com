@@ -16,7 +16,7 @@
    .copy{
      color: white;
      font-family: 'Nunito';
-     font-size: 15px;
+     font-size: 10px;
      color: white;
    }
 
@@ -28,7 +28,7 @@
   .siteName{
     line-height: 40px;
     color: rgb(238, 0, 255);
-    font-size: 20px;
+    font-size: 15px;
     font-family: 'Philosopher', sans-serif;
   }
   
@@ -140,13 +140,16 @@
 
   div>p {
     font-family: 'Quicksand';
-    font-size: 20px;
+    font-size: 15px;
     color: #8e158a;
   }
   p.text-center {
     margin: 0px 0px 0px 0px !important;
   }
 
+  .intro2{
+    border-bottom: transparent;
+  }
   .contain {
     padding-left: 30px;
     display: inline-block;
@@ -155,7 +158,7 @@
   
   div>p>a{
    white-space: nowrap;
-   font-size: 15px;
+   font-size: 10px;
    color: rgb(57, 56, 57);
    text-decoration: none;
   }
@@ -168,11 +171,11 @@
 
   .terms{
     font-family: 'Poppins'!important;
-    font-size: 18px !important;
+    font-size: 13px !important;
     color: red !important;
   }
    ul{
-    font-size: 30px;
+    font-size: 20px;
     font-family: 'Roboto';
     color: rgb(163, 28, 161);
    }
@@ -234,7 +237,7 @@ footer>div>span{
 
 footer>p{
   padding: 5px;
-  font-size: 15px;
+  font-size: 10px;
   color: inherit;
 }
 

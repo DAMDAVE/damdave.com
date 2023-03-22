@@ -9,6 +9,30 @@ var showLoading = function (selector) {
     insertHtml(selector, html);
   };
 
+  var showLoading1 = function (selector) {
+    var html = "<div class='text-center gif'>";
+    html += "<img src='IMAGES/124.gif'></div>";
+    insertHtml(selector, html);
+  };
+
+  var showLoading2 = function (selector) {
+    var html = "<div class='text-center gif'>";
+    html += "<img src='IMAGES/125.gif'></div>";
+    insertHtml(selector, html);
+  };
+
+  var showLoading3 = function (selector) {
+    var html = "<div class='text-center gif'>";
+    html += "<img src='IMAGES/123.gif'></div>";
+    insertHtml(selector, html);
+  };
+
+  var showLoading4 = function (selector) {
+    var html = "<div class='text-center gif'>";
+    html += "<img src='IMAGES/123.gif'></div>";
+    insertHtml(selector, html);
+  };
+
 const blog = "HTML/blog.html"
 const certificate = "HTML/certificate.html"
 const conds = "HTML/conds.html"
@@ -94,7 +118,7 @@ function loadpageHome () {
   };
 
   function loadpageCertificate () {
-    showLoading("#main-content");
+    showLoading1("#main-content");
     linkCertificate.style.color ="#1f158e";
     linkCertificate.style.borderBottom = "solid 2px #1f158e";
     linkHome.style.color ="#a9a3e6";
@@ -135,6 +159,7 @@ function loadpageHome () {
  
 
 function loadpagePrevious () {
+  showLoading2("#main-content");
   linkPrevious.style.color ="#158e47";
   linkPrevious.style.borderBottom = "solid 2px #158e47";
   linkHome.style.color ="#a3e6b4";
@@ -159,7 +184,6 @@ function loadpagePrevious () {
   linkCredits.style.borderBottom = "transparent";
   linkSupport.style.color ="#a3e6b4";
   linkSupport.style.borderBottom = "transparent";
-  showLoading("#main-content");
   $ajaxUtils.sendGetRequest(
     previous,
     function (responseText) {
@@ -207,6 +231,11 @@ function loadpageWorks () {
     },
    false
   )
+  var newLink = document.createElement("link");
+  newLink.rel = "stylesheet";
+  newLink.href = "CSS/works.css";
+  document.getElementsByTagName('head')[0].appendChild(newLink);
+  document.querySelector('meta[name="theme-color"]').setAttribute("content", "rgb(82, 154, 123)")
 };
 
 function loadpageHosting () {
