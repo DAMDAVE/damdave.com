@@ -1,3 +1,80 @@
-.work{
+.work, .work2, .work3{
     margin-top: 113px;
+    width: 80%;
+    margin-left: 10%;
+    border-left: solid 2px #e6e0a3;
+    border-bottom: solid 2px #e6e0a3;
+    padding-bottom: 0px;
+}
+
+.work2, .work3{
+    margin-top: 0px;
+}
+
+.work p, .work2 p, .work3 p{
+    padding: 20px;
+}
+
+.work3{
+    border-bottom: none;
+    margin-bottom: -15px;
+}
+
+li{
+    color: #888e15;
+}
+h3{
+    padding-top: 10px;
+    color: #888e15;
+    text-decoration: underline;
+}
+a{
+    color: #888e15;
+    line-height: 1.3rem;
+    text-decoration: underline;
+}
+.siteTitle{
+    background-image:linear-gradient(rgb(248, 251, 225), white);
+}
+
+.siteName{
+    color: rgb(108, 101, 4);
+}  
+
+div.myLinks {
+    background-image: linear-gradient( white, rgb(248, 251, 225));
+}  
+
+div::-webkit-scrollbar-track{
+    background: rgb(242, 244, 207);
+}
+
+div::-webkit-scrollbar-thumb{
+    background: #e6e0a3;
+  }
+
+.purple{
+    color: #e6e0a3;
+}  
+
+div.myLinks a{
+    color: rgb(0, 255, 195);
+}
+
+div>p {
+    font-family: 'Quicksand';
+    font-size: 15px;
+    color: #888e15;
+}
+
+#myBtn {
+    background-color: #e6e0a3;
+    color: #888e15;
+  }
+
+footer{
+    background-color: rgb(154, 153, 82);
+    color: white;
+    z-index: 901;
+    font-size: 20px;
 }

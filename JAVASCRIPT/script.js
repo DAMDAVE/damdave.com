@@ -9,29 +9,6 @@ var showLoading = function (selector) {
     insertHtml(selector, html);
   };
 
-  var showLoading1 = function (selector) {
-    var html = "<div class='text-center gif'>";
-    html += "<img src='IMAGES/124.gif'></div>";
-    insertHtml(selector, html);
-  };
-
-  var showLoading2 = function (selector) {
-    var html = "<div class='text-center gif'>";
-    html += "<img src='IMAGES/125.gif'></div>";
-    insertHtml(selector, html);
-  };
-
-  var showLoading3 = function (selector) {
-    var html = "<div class='text-center gif'>";
-    html += "<img src='IMAGES/123.gif'></div>";
-    insertHtml(selector, html);
-  };
-
-  var showLoading4 = function (selector) {
-    var html = "<div class='text-center gif'>";
-    html += "<img src='IMAGES/123.gif'></div>";
-    insertHtml(selector, html);
-  };
 
 const blog = "HTML/blog.html"
 const certificate = "HTML/certificate.html"
@@ -61,8 +38,9 @@ const linkSupport = document.querySelector(".support");
 
 
   document.addEventListener("DOMContentLoaded", function (event) {
-   loadpageHome()
+    loadpageHome()
   });
+  var a = document.getElementsByClassName("myLinks");
 
    linkHome.addEventListener("click", loadpageHome)
    linkCertificate.addEventListener("click", loadpageCertificate)
@@ -114,11 +92,11 @@ function loadpageHome () {
       newLink.rel = "stylesheet";
       newLink.href = "CSS/style.css";
       document.getElementsByTagName('head')[0].appendChild(newLink);
-      document.querySelector('meta[name="theme-color"]').setAttribute("content", "rgb(142, 82, 154)")
   };
 
   function loadpageCertificate () {
-    showLoading1("#main-content");
+    showLoading("#main-content");
+    document.querySelector(".myLinks").scrollLeft = 20;
     linkCertificate.style.color ="#1f158e";
     linkCertificate.style.borderBottom = "solid 2px #1f158e";
     linkHome.style.color ="#a9a3e6";
@@ -154,12 +132,14 @@ function loadpageHome () {
    newLink.rel = "stylesheet";
    newLink.href = "CSS/certificate.css";
    document.getElementsByTagName('head')[0].appendChild(newLink);
-   document.querySelector('meta[name="theme-color"]').setAttribute("content", "rgb(19, 19, 133)")
+
+   
 };
  
 
 function loadpagePrevious () {
-  showLoading2("#main-content");
+  showLoading("#main-content");
+  document.querySelector(".myLinks").scrollLeft = 200;
   linkPrevious.style.color ="#158e47";
   linkPrevious.style.borderBottom = "solid 2px #158e47";
   linkHome.style.color ="#a3e6b4";
@@ -195,34 +175,34 @@ function loadpagePrevious () {
   newLink.rel = "stylesheet";
   newLink.href = "CSS/previous.css";
   document.getElementsByTagName('head')[0].appendChild(newLink);
-  document.querySelector('meta[name="theme-color"]').setAttribute("content", "rgb(82, 154, 123)")
 };
 
 function loadpageWorks () {
   showLoading("#main-content");
-  linkWorks.style.color ="#8e158a";
-  linkWorks.style.borderBottom = "solid 2px #8e158a";
-  linkHome.style.color ="initial";
+  document.querySelector(".myLinks").scrollLeft = 400;
+  linkWorks.style.color ="#888e15";
+  linkWorks.style.borderBottom = "solid 2px #888e15";
+  linkHome.style.color ="#e6e0a3";
   linkHome.style.borderBottom = "transparent";
-  linkCertificate.style.color ="initial";
+  linkCertificate.style.color ="#e6e0a3";
   linkCertificate.style.borderBottom = "transparent";
-  linkPrevious.style.color ="initial";
+  linkPrevious.style.color ="#e6e0a3";
   linkPrevious.style.borderBottom = "transparent";
-  linkHosting.style.color ="initial";
+  linkHosting.style.color ="#e6e0a3";
   linkHosting.style.borderBottom = "transparent";
-  linkConnect.style.color ="initial";
+  linkConnect.style.color ="#e6e0a3";
   linkConnect.style.borderBottom = "transparent";
-  linkBlog.style.color ="initial";
+  linkBlog.style.color ="#e6e0a3";
   linkBlog.style.borderBottom = "transparent";
-  linkConds.style.color ="initial";
+  linkConds.style.color ="#e6e0a3";
   linkConds.style.borderBottom = "transparent";
-  linkSign.style.color ="initial";
+  linkSign.style.color ="#e6e0a3";
   linkSign.style.borderBottom = "transparent";
-  linkDeveloper.style.color ="initial";
+  linkDeveloper.style.color ="#e6e0a3";
   linkDeveloper.style.borderBottom = "transparent";
-  linkCredits.style.color ="initial";
+  linkCredits.style.color ="#e6e0a3";
   linkCredits.style.borderBottom = "transparent";
-  linkSupport.style.color ="initial";
+  linkSupport.style.color ="#e6e0a3";
   linkSupport.style.borderBottom = "transparent";
   $ajaxUtils.sendGetRequest(
     works,
@@ -235,7 +215,6 @@ function loadpageWorks () {
   newLink.rel = "stylesheet";
   newLink.href = "CSS/works.css";
   document.getElementsByTagName('head')[0].appendChild(newLink);
-  document.querySelector('meta[name="theme-color"]').setAttribute("content", "rgb(82, 154, 123)")
 };
 
 function loadpageHosting () {
